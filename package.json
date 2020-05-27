@@ -1,7 +1,7 @@
 {
   "name": "git-username-search",
   "version": "1.0.0",
-  "description": "App that search github username and diplays repos and readme.",
+  "description": "",
   "main": "index.js",
   "author": "Louis Madrigal",
   "license": "MIT",
@@ -28,10 +28,10 @@
     }
   },
   "dependencies": {
-    "aphrodite": "^1.2.0",
+    "aphrodite": "2.4.0",
     "axios": "^0.19.2",
-    "classnames": "^2.2.5",
-    "date-fns": "^1.28.2",
+    "classnames": "2.2.6",
+    "date-fns": "2.14.0",
     "lodash": "^4.17.4",
     "normalizr": "^3.1.0",
     "parse-link-header": "^1.0.1",
@@ -99,5 +99,6 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^3.1.11",
     "webpack-merge": "^4.0.0"
-  }
+  },
+  "keywords": []
 }
