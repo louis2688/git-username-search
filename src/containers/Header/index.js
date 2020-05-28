@@ -1,4 +1,3 @@
-// @flow
 
 import React, {
   Component,
@@ -28,9 +27,9 @@ export class HeaderContainer extends Component {
     this.handleSearchUser(props.searchQuery);
   }
 
-  componentWillReceiveProps(nextProps: Props) {
-    if (nextProps.searchQuery !== this.props.searchQuery) {
-      this.handleSearchUser(nextProps.searchQuery);
+  componentDidUpdate(prevProps: Props) {
+    if (prevProps.searchQuery !== this.props.searchQuery) {
+      this.handleSearchUser(this.props.searchQuery);
     }
   }
 

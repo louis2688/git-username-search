@@ -42,9 +42,9 @@ export class ProfileContainer extends Component {
     this.props.getProfile(getUsername(props));
   }
 
-  componentWillReceiveProps(nextProps: Props) {
+  componentDidUpdate(prevProps: Props) {
     const username = getUsername(this.props);
-    const nextUsername = getUsername(nextProps);
+    const nextUsername = getUsername(prevProps);
 
     if (username !== nextUsername) {
       this.props.getProfile(nextUsername);
